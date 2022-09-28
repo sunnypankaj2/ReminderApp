@@ -67,7 +67,7 @@ app.get('/getAllReminded', async (req,res)=>{
 app.get('/getReminderByName', async(req,res)=>{
     try{   
         const reminder = await Reminder.find({reminderMessage: req.body.reminder});
-        if(reminder.length===0){            
+        if(reminder.length!==0){            
             res.status(201).json(reminder);       
         }else{            
             res.status(400).send("could not find such reminder");
