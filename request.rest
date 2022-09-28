@@ -1,13 +1,16 @@
+// GET request to get a reminder
 
 GET http://localhost:3000/getReminder
 Content-Type: application/json
 
 {
-    "reminder": "Wake up Sid,
+    "reminder": "Wake up bitch",
     "remindAt": "new Date.now().toString()" 
 }
 
 ###
+
+// POST request to add a reminder
 
 POST  http://localhost:3000/addReminder
 Content-Type: application/json
@@ -19,9 +22,14 @@ Content-Type: application/json
 
 ###
 
+// GET request to get all reminders
+
 GET http://localhost:3000/getAllReminders
 
 ###
 
+// DELETE request to delete a reminder
+
 DELETE  http://localhost:3000/6332e032a96d322f5a2ed4ad
+
 
