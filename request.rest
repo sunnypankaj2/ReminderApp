@@ -30,6 +30,6 @@ GET http://localhost:3000/getAllReminders
 
 // DELETE request to delete a reminder
 
-DELETE  http://localhost:3000/6332e032a96d322f5a2ed4ad
+DELETE  http://localhost:3000/6333cefe4d374ecab80f660a
 
 

@@ -110,7 +110,7 @@ setInterval( async() => {
                         if(reminder.remindAt-now < 0){
                             // code for sending the reminder
                             console.log("reminded "+reminder.reminderMessage+" at "+now);
-                            await Reminder.findByIdAndDelete(reminder._id);
+                            await Reminder.findByIdAndUpdate(reminder._id,{reminded: true});
                         }
                     }
                 }catch(err){
