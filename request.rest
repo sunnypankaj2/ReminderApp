@@ -4,7 +4,7 @@ GET http://localhost:3000/getReminder
 Content-Type: application/json
 
 {
-    "reminder": "Wake up bitch",
+    "reminder": "Wake up Sid",
     "remindAt": "new Date.now().toString()" 
 }
 
