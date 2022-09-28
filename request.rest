@@ -1,6 +1,6 @@
 // GET request to get a reminder
 
-GET http://localhost:3000/getReminder
+GET http://localhost:3000/getReminderByName
 Content-Type: application/json
 
 {
@@ -27,9 +27,14 @@ Content-Type: application/json
 GET http://localhost:3000/getAllReminders
 
 ###
+// GET request to get all reminders that have been reminded
 
-// DELETE request to delete a reminder
+GET http://localhost:3000/getAllReminded
 
-DELETE  http://localhost:3000/6333cefe4d374ecab80f660a
+###
+
+// DELETE request to delete a reminder by Id
+
+DELETE  http://localhost:3000/deleteById/6333e8428175961a979fca25
 
 
